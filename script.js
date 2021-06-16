@@ -89,7 +89,6 @@ function deleteTodo(todoID) {
   addTolocalStogare(todos);
 }
 
-deleteTodo(todoID);
 
 // add an eventListener on form, and listen for submit event
 function addTodoHandler(event) {
