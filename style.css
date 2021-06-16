@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(25, 53, 65);
+  /* background-color: rgba(255, 255, 255, 0.97);
+  background-image: linear-gradient(#d7d7d7 1.3px, transparent 1.3px),
+    linear-gradient(to right, #d7d7d7 1.3px, rgba(255, 255, 255, 0.97) 1.3px);
+  background-size: 26px 26px; */
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgba(25, 53, 65, 0.322);
+}
+ul {
+  list-style-type: none;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(126, 126, 123, 0.514);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+  width: 460px;
+  height: 680px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+h1 {
+  margin: 15px 0;
+  color: rgb(211, 207, 207);
+}
+
+/* todo-form */
+.todo-form {
+  margin: 40px 0px;
+}
+
+.todo-input {
+  width: 250px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.add-button {
+  background-color: orange;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* todo-form end */
+
+/* todo-items */
+
+.todo-items {
+  min-width: 350px;
+}
+
+/* each li with class="item" */
+.item {
+  background-color: white;
+  padding: 5px;
+  font-size: 1.1rem;
+}
+
+/* item style end */
+
+.checkbox {
+  margin: 6px;
+  float: right;
+}
+.delete-button {
+  float: right;
+  border: none;
+  border-radius: 7px;
+  padding: 2px 8px;
+  margin-left: 10px;
+  font-size: 1.05rem;
+  font-weight: 550;
+  color: red;
+}
+.checked {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+li {
+  list-style: none;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 3px;
+  transition: 0.4s;
+  width: 78%;
+}
+
+.clear-button {
+  background-color: rgb(221, 122, 122);
+  color: white;
+  margin: 10 px 9px;
+  position: absolute;
+  right: 46px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  opacity: 0.3;
+}
+.clear-button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.clear-completed-button {
+  background-color: rgba(69, 206, 57, 0.575);
+  color: white;
+  margin: 10 px 9px;
+  position: absolute;
+  right: 150px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  opacity: 1;
+}
